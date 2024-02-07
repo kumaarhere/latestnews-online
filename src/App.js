@@ -1,3 +1,4 @@
+const dotenv=require('dotenv');
 import './App.css';
 import logo from './news.png';
 import toTop from './p-arrow.png';
@@ -16,8 +17,8 @@ function getnews(topics){
   if(!about){
     about=topics;
   }
-  
-   fetch(`https://newsapi.in/newsapi/news.php?key=pzOHugmcxdkuql4XgOkFwF6D2KMoXv&category=${about}`)
+  v
+   fetch(`https://newsapi.in/newsapi/news.php?key=${dotenv.process.React-API-KEY}&category=${about}`)
    .then((res)=>res.json())
    .then((data)=>{
 
