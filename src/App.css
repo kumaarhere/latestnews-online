@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+.logo{
+  width:80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn{
+  padding:0px 25px;
+}
+.btn-info{
+  padding:0px 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-white{
+  line-height: 22px;
+}
+#top{
+  width:50px;
+  position:fixed;
+  left: 82%;
+  bottom:10px;
+  border:none;
+  outline: none;
+  scroll-behavior:smooth;
+  background-color: transparent;
+  z-index:999;
+}
+#backToTOp{
+  width:50px;
+  opacity:0.7;
+  display:none;
+}
+.bg-danger{
+  outline: none;
+  font-weight: 600;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.breadcrumb-item:hover{
+  text-decoration: underline;
+  text-decoration-color:rgb(165, 181, 207);
+}
+.breadcrumb-item{
+  font-family: "lemon";
+  font-size: 20px;
+}
+.btn-group{
+  margin-left: 24%;
+}
+@media (min-width:1000px) {
+  .card-img-top{
+    height: 500px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #top{
+    left: 95%;
   }
-  to {
-    transform: rotate(360deg);
+.breadcrumb-item{
+    font-size: 25px;
+  }
+  .btn-group{
+    margin:0;
+  }
+  .bg-danger{
+    padding:15px;
   }
 }
